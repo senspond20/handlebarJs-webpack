@@ -1,12 +1,14 @@
 // template
 const petsTemplate = require('./pages/pets/pets.hbs')
 const homeTemplate = require('./pages/home/home.hbs')
+const aboutTemplate = require('./pages/about/about.hbs')
 const Home = homeTemplate()
 const Pets = petsTemplate()
-
+const About = aboutTemplate()
 const routes = {
   '/': Home,
   '/pets': Pets,
+  '/about' : About,
 }
 
 // entry point
